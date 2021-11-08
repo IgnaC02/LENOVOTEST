@@ -1,6 +1,15 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #af0e4e;
+  border-radius: 9px;
 }
 
 .nav1 {
@@ -42,7 +51,7 @@ body {
 .container-search {
   display: flex;
   align-items: center;
-  margin-right: 0.625rem;
+  margin-right: 0.925rem;
 }
 .search-input {
   border: 1.5px solid #000;
@@ -84,6 +93,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  /* height:100%; */
+  padding: 15px;
 }
 .banner-txt {
   color: #fff;
@@ -117,7 +128,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-  border: 1px solid #5c5c5c;
+  border-bottom: 1px solid #5c5c5c;
 }
 .nav4txt {
   font-family: "Lato", sans-serif;
@@ -179,7 +190,8 @@ body {
 .search-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 .matching-results {
   font-family: "Lato", sans-serif;
@@ -188,7 +200,7 @@ body {
 }
 
 .select {
-  margin-right: 3%;
+  margin-right: 1%;
   background-image: url(./img/keyboard_arrow_down.svg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -218,24 +230,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #000;
+  border: 1px solid #BCBCBC;
   border-radius: 4px;
-  height: 330px;
+  height: 100%;
   padding: 8px;
   transition: box-shadow 0.3s;
 }
 
 .card1:hover {
   box-shadow: 0 0 17px rgba(33, 33, 33, 0.2);
+  border: 1px solid #000;
 }
 .card2:hover {
   box-shadow: 0 0 17px rgba(33, 33, 33, 0.2);
+  border: 1px solid #000;
 }
 .card3:hover {
   box-shadow: 0 0 17px rgba(33, 33, 33, 0.2);
+  border: 1px solid #000;
 }
 .card4:hover {
   box-shadow: 0 0 17px rgba(33, 33, 33, 0.2);
+  border: 1px solid #000;
 }
 
 .card-top {
@@ -256,7 +272,7 @@ body {
 .card-img {
   display: flex;
   flex-direction: column;
-  margin-top: 25%;
+  margin-top: 23%;
 }
 .laptop-img {
   width: 100%;
@@ -270,6 +286,7 @@ body {
 .bottom {
   display: flex;
   flex-direction: column;
+  margin-top: 11%;
 }
 .laptop-price {
   font-size: 26px;
@@ -292,7 +309,7 @@ body {
   width: 100%;
   margin-top: 5%;
   margin-right: auto;
-  margin-bottom: 6%;
+  margin-bottom: 7%;
   margin-left: auto;
   padding: 10px;
   transition: all 0.2s;
@@ -314,7 +331,8 @@ body {
     #ce0046 83.33%,
     #c3004b 100%
   );
-  margin-top: 40px;
+  position: absolute;
+  margin-top: 3%;
   color: #fff;
   height: 140px;
   font-family: "Lato", sans-serif;
@@ -337,3 +355,4 @@ body {
   font-size: 30px;
   font-weight: normal;
 }
+
