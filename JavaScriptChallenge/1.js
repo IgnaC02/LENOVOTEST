@@ -1,5 +1,3 @@
-// 1) Create a function that receives an array of positive integers and returns an array with only the input’s pair numbers.
-
 function pairNumbers(array) {
   let arr = [];
   for (let i = 0; i < array.length; i++) {
